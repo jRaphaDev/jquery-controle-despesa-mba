@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Sistema de Despesas - Adicionar despesa</title>
+		<meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/add.js"></script>
+	</head>
+	<body>
+		<form action="lista.html">
+            <div class="form-group">
+                <label for="tipos-despesas">Tipo da Despesa</label>
+                <select id="tipos-despesas" name="tipos-despesas" class="form-control">
+			        <option value=""></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nome">Nome da Despesa</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite o nome..."
+                class="form-control">
+			</div>
+            <div class="form-group">
+                <label for="data">Data da Despesa</label>
+                <div class="input-group">
+                    <div class="input-group-addon 
+                    "><span class="glyphicon glyphicon-time"></span>
+                    </div>
+                    <input type="date" id="data" name="data" class="form-control" required>
+                </div>
+            </div>
+			<div class="form-group">
+                <label for="valor">Valor da Despesa</label>
+                <div class="input-group">
+                    <div class="input-group-addon">
+                    R$</div>
+                    <input type="number" id="valor" name="valor" class="form-control text-right" required placeholder="Digite o valor...">
+                </div>
+			</div>
+            <div class="form-group">
+			 <a class="btn btn-primary " id="btnAdd"> 
+                 <span class="glyphicon glyphicon-usd"></span>
+                 Salvar despesa
+            </a>
+            </div>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Sistema de Despesas - Listar despesas</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/add-tipo-despesa.js"></script>
+        <script src="js/index.js"></script>
+	</head>
+	<body>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Data</th>
+                        <th>Nome</th>
+                        <th>Valor</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tabela_corpo">
+                </tbody>
+            </table>
+        </div>
+		<a class="btn btn-primary" href="add.html" >
+            <div class="glyphicon glyphicon-plus"></div> Adicionar despesa
+        </a>
+        
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tabela_corpo_tipo">
+                </tbody>
+            </table>
+        </div>
+        <a class="btn btn-primary" href="add-tipo-despesa.html" >
+            <div class="glyphicon glyphicon-plus"></div> Adicionar tipo de despesa
+        </a>
+		
+	</body>
+</html>	
